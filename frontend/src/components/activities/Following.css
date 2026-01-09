@@ -1,0 +1,273 @@
+.repo-main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 32px;
+    padding: 32px;
+    background-color: #0d1117;
+    height: 100vh;
+    padding: 3rem;
+
+}
+
+
+.pro-left {
+    display: flex;
+    background-color: #0d1117;
+}
+
+
+.profile-card {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background-color: #0d1117;
+}
+
+.profile-avatar {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8b949e;
+}
+
+.username {
+    color: #8b949e;
+    font-size: 20px;
+    font-weight: 700;   
+}
+
+.name{
+  color: white;
+  background-color: #0d1117;
+  font-size: 26px;
+}
+
+.bio{
+  color: #8b949e;
+  background-color: #0d1117;
+}
+
+
+.lower{
+  background-color: #0d1117;
+  padding: 1rem;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    color: #8b949e;
+    background-color: #0d1117;
+
+}
+
+.edit-profile-btn {
+    width: 100%;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 0.3rem;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.edit-profile-btn:hover {
+    border: 2px solid rgb(67, 67, 71);
+}
+
+.repo-right {
+    display: grid;
+    background-color: #0d1117;
+    grid-template-rows: 3fr 0.5fr;  
+}
+
+
+.pro-footer{
+
+     background-color: #0d1117;
+
+}
+
+.up-right {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #0d1117;
+}
+
+
+.section-title {
+  color: #c9d1d9;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.empty-text {
+  color: #8b949e;
+  font-size: 0.95rem;
+}
+
+
+.following-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+.following-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  padding: 14px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.following-card:hover {
+  border-color: #a5a1a2;
+}
+
+
+.card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+.avatar-circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #0d1117;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #58a6ff;
+  border: 1px solid #30363d;
+}
+
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-username {
+  color: #c9d1d9;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.card-bio {
+  color: #8b949e;
+  font-size: 0.8rem;
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.view-btn {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #58a6ff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+ border: 1px solid rgb(99, 94, 94);
+}
+
+
+
+@media (max-width: 795px) {
+
+  .repo-main {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+    height: auto;
+  }
+
+  .pro-left {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .profile-card {
+    width: 100%;
+    max-width: 360px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-avatar {
+    width: 140px;
+    height: 140px;
+  }
+
+  .email {
+    justify-content: center;
+  }
+
+  .edit-profile-btn {
+    width: 100%;
+  }
+
+ 
+  .repo-right {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 1.5rem;
+    grid-template-rows: auto 1fr;
+  }
+
+ 
+  .following-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card-left {
+    width: 100%;
+  }
+
+  .card-bio {
+    max-width: 100%;
+  }
+
+  .view-btn {
+    align-self: flex-end;
+    width: fit-content;
+  }
+
+}
+
+
+

@@ -1,0 +1,156 @@
+.ask-wrapper {
+  background-color: #0d1117;
+  padding:2rem;
+  border-radius: 16px;
+  width: 100%;
+}
+
+.ask-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  margin-top: 1rem;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+}
+
+.ask-left {
+  display: flex;
+   background-color: #0d1117;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;             
+}
+
+
+.ask-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  height: 3.5rem;
+   background-color: #0d1117;
+  font-size: 16px;
+  color: #c9d1d9;
+}
+
+.ask-input::placeholder {
+  color: #7d8590;
+
+}
+
+.ask-bar:focus-within {
+  border-color: #1f6feb;
+  box-shadow: 0 0 0 1px rgba(31, 111, 235, 0.5);
+}
+
+
+.ask-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: #c9d1d9;
+   background-color: #0d1117;
+}
+
+
+.ask-right {
+  display: flex;
+  align-items: center;
+  justify-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0; 
+  background-color: #0d1117;     
+}
+
+.model-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.model-btn:hover {
+   background-color: #0d1117;
+}
+
+
+.send-btn {
+  background: #238636;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+   background-color: #0d1117;
+}
+
+
+
+.ask-actions {
+  display: flex;
+  gap: 2rem;
+  margin-top: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color:black;
+}
+
+.ask-actions button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border-radius: 10px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 8px 12px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.ask-actions button:hover {
+  background: #161b22;
+}
+
+
+.new {
+  background: #1f6feb;
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 999px;
+}
+
+
+@media (max-width: 768px) {
+  .ask-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ask-right {
+    justify-content: flex-end;
+  }
+}
+
+
+.ask-input:focus,
+.ask-input:active,
+.ask-input:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}

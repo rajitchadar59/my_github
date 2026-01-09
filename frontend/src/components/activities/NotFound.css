@@ -1,0 +1,154 @@
+/* NotFound.css */
+
+/* Main Page Layout */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 64px); /* Navbar height minus karke center */
+  background-color: #0d1117; /* GitHub Dark Mode Background */
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 20px;
+}
+
+/* The Terminal Window Box */
+.terminal-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #161b22; /* Slightly lighter dark */
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+/* Header strip of the terminal (dots) */
+.terminal-header {
+  background-color: #21262d;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #30363d;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-title {
+  margin-left: auto;
+  font-size: 12px;
+  color: #8b949e;
+  font-family: monospace;
+}
+
+/* Body of the terminal */
+.terminal-body {
+  padding: 20px;
+  font-family: 'Courier New', Courier, monospace; /* Monospace for code feel */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Code Colors */
+.code-line {
+  margin: 5px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.prompt {
+  color: #2da44e; /* Green Prompt */
+  margin-right: 10px;
+}
+
+.command {
+  color: #c9d1d9;
+}
+
+.error-text {
+  color: #ff7b72; /* GitHub Error Red */
+}
+
+.output {
+  color: #79c0ff; /* GitHub Blue */
+  font-weight: bold;
+}
+
+/* Blinking Cursor Animation */
+.blinking-cursor {
+  color: #c9d1d9;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* Bottom Text and Button */
+.actions {
+  text-align: center;
+}
+
+.actions h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #c9d1d9;
+}
+
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* GitHub Dark UI Style */
+  background-color: #21262d;
+  color: #c9d1d9;
+  
+  /* Size chota aur compact */
+  padding: 6px 16px; 
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  
+  /* Subtle Borders */
+  border: 1px solid #30363d;
+  border-bottom: 2px solid #1b1f24; /* Depth effect */
+  
+  transition: all 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background-color: #30363d; /* Thoda light on hover */
+  border-color: #8b949e; /* Border highlight */
+  color: #ffffff;
+  transform: translateY(-1px); /* Very subtle lift */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.home-btn:active {
+  background-color: #21262d;
+  border-bottom: 1px solid #30363d; 
+  transform: translateY(1px);
+}
+
+
+.error-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #f0f6fc;
+  margin-top: 10px;
+}
+

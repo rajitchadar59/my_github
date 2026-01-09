@@ -1,0 +1,245 @@
+.issue-container{
+background-color: #0d1117;
+height: auto;
+}
+.issue-page {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+  background-color: #0d1117; 
+  color: #c9d1d9;
+  border-radius: 8px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  height: 100%;
+}
+
+.issue-page h2 {
+  padding: 16px 24px;
+  margin: 0;
+  border-bottom: 1px solid #30363d;
+  background-color: #0d1117;
+  font-size: 20px;
+
+}
+
+
+.repo-section {
+  padding: 20px 24px;
+  border-bottom: 1px solid #30363d;
+  background-color: #0d1117;
+}
+
+.repo-section label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  background-color: #0d1117;
+}
+
+.repo-section label span {
+  color: #555353;
+  background-color: #0d1117;
+}
+
+
+.repo-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.repo-pill:hover {
+  border-color: #58a6ff;
+  background-color: #0d1117;
+}
+
+
+.repo-dropdown {
+  margin-top: 8px;
+  width: 320px;
+ background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+}
+
+.repo-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-bottom: 1px solid #30363d;
+  background-color: #0d1117;
+}
+
+.repo-search input {
+  background-color: #0d1117;
+  border: none;
+  outline: none;
+  color: #c9d1d9;
+  width: 100%;
+  font-size: 14px;
+}
+
+.repo-search input:focus,
+.repo-search input:active,
+.repo-search input:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+.repo-item {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  background-color: #0d1117;
+  gap: 10px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+}
+
+.repo-item:hover {
+  background-color: #0d1117;
+  border-left-color: #1f6feb;
+}
+
+.check {
+  margin-left: auto;
+  color: #2ea043;
+  background-color: #0d1117;
+}
+
+.repo-hint {
+  padding: 10px 14px;
+  font-size: 12px;
+  color: #8b949e;
+  border-top: 1px solid #30363d;
+  background-color: #0d1117;
+}
+
+
+.template-box {
+  padding: 24px;
+  background-color: #0d1117;
+  height: 100vh;
+}
+
+.template-title {
+  font-size: 13px;
+  color: #8b949e;
+  margin-bottom: 12px;
+  background-color: #0d1117;
+}
+
+
+.template-card {
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+
+.template-card:hover {
+  border-color: #58a6ff;
+  background-color: #0d1117;
+}
+
+.template-card h3 {
+  margin: 0;
+  font-size: 16px;
+  background-color: #0d1117;
+}
+
+.template-card p {
+  margin: auto;
+  font-size: 13px;
+  color: #8b949e;
+  background-color: #0d1117;
+}
+
+
+.issue-form {
+  padding: 24px;
+  border-top: 1px solid #30363d;
+  background-color: #0d1117;
+  height: 100vh;
+}
+
+.field {
+  margin-bottom: 20px;
+  background-color: #0d1117;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  background-color: #0d1117;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: #58a6ff;
+  background-color: #0d1117;
+}
+
+
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+  background-color: #0d1117;
+}
+
+.btn-primary {
+  background: #238636;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn-primary:hover {
+  background: #2ea043;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid #30363d;
+  color: #c9d1d9;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+ border: 1px solid rgb(169, 163, 163);
+}

@@ -1,0 +1,22 @@
+.no-notification-wrapper {
+  height: calc(100vh - 64px); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8b949e;
+  background-color: #0d1117;
+  text-align: center;
+}
+
+.no-notification-wrapper h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #c9d1d9;
+  background-color: #0d1117;
+}
+
+.no-notification-wrapper p {
+  font-size: 14px;
+  background-color: #0d1117;
+}
