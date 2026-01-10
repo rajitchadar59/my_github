@@ -189,7 +189,6 @@
   min-width: 100px;               
   display: flex;
   align-items: center;
-  justify-content: center;
   padding: 10px 0;
   color: #8b949e;
   font-size: 14px;
@@ -249,7 +248,7 @@
   }
 
   .follow-item {
-    flex: 1 1 50%;      /* 2 items per row */
+    flex: 1 1 50%;      
     font-size: 13px;
     padding: 12px 0;
   }
