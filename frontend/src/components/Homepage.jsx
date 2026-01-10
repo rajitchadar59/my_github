@@ -40,8 +40,8 @@ export default function HomePage() {
           Host code, collaborate globally, and deploy faster than ever.
         </p>
         <div className="hero-actions">
-          <button className="btn ghost-blue">Get started</button>
-          <button className="btn  ghost-blue">Explore</button>
+          <button className="btn ghost-blue" onClick={()=>navigate('/auth')}>Get started</button>
+          <button className="btn  ghost-blue" onClick={()=>navigate('/auth')}>Explore</button>
         </div>
       </section>
 
