@@ -97,9 +97,9 @@ function Following() {
 
 
                         <div className="lower">
-                            <h2 className="name">{user.name ? user.name : "prashant chadar"}</h2>
+                            <h2 className="name">{user.name ? user.name : ""}</h2>
                             <h2 className="username" style={{ backgroundColor: "#0d1117" }}>{user.username}</h2>
-                            <p className="bio">{user.bio ? user.bio : "i am a web devloper persuing btech in cse "}</p>
+                            <p className="bio">{user.bio ? user.bio : ""}</p>
                             <span className="email" style={{ backgroundColor: "#0d1117" }}><LinkIcon size={16} style={{ backgroundColor: "#0d1117" }} />{user.linkedin ? user.linkedin : "linkedin.com"}</span>
                             <div className="email">
                                 <MailIcon size={16} style={{ backgroundColor: "#0d1117" }} />
