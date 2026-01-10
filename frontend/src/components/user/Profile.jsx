@@ -17,6 +17,8 @@ import { LinkExternalIcon } from "@primer/octicons-react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import { useAuth } from "../../AuthContext"
+import server from "../../environment"
+
 
 function Profile() {
   const navigate = useNavigate();
@@ -33,7 +35,7 @@ function Profile() {
     const fetchProfile = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(`http://localhost:3000/profile/${username}`, {
+        const res = await axios.get(`${server}/profile/${username}`, {
           headers: token ? { Authorization: `Bearer ${token}` } : {}
         });
 
@@ -55,7 +57,7 @@ function Profile() {
     const checkFollow = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/user/is-following/${user._id}`,
+          `${server}/user/is-following/${user._id}`,
           {
             headers: {
               Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -82,7 +84,7 @@ function Profile() {
   const handleFollow = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/user/follow",
+        `${server}/user/follow`,
         { targetUserId: user._id },
         {
           headers: {
@@ -102,7 +104,7 @@ function Profile() {
     const fetchFollowStats = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/profile/${username}/follow-stats`
+          `${server}/profile/${username}/follow-stats`
         );
         setFollowers(res.data.followers);
         setFollowing(res.data.following);

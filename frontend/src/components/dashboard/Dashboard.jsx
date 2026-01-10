@@ -13,6 +13,8 @@ import AskAnythingBar from "./AskAnythingBar";
 import Navbar from "../Navbar";
 import { useNavigate } from "react-router-dom";
 
+import server from "../../environment"
+
 function Dashboard() {
 
     const [searchQuery, setsearchQuery] = useState("");
@@ -27,7 +29,7 @@ function Dashboard() {
   useEffect(() => {
     const fetchSuggestedRepositories = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/repo/all`);
+        const res = await axios.get(`${server}/repo/all`);
         setsuggestedRepositories(res.data);
         
 

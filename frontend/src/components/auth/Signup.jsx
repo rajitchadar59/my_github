@@ -9,6 +9,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { MarkGithubIcon } from "@primer/octicons-react";
+import server from "../../environment"
 
 function Signup() {
 
@@ -30,7 +31,7 @@ function Signup() {
 
     try {
       setloading(true);
-      const res = await axios.post("http://localhost:3000/signup", {
+      const res = await axios.post(`${server}/signup`, {
         email: email,
         password: password,
         username: username

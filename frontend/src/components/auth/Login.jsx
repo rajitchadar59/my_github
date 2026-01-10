@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import { MarkGithubIcon } from "@primer/octicons-react";
 
+import server from "../../environment"
+
 function Login() {
 
   const { CurrentUser, setCurrentUser } = useAuth();
@@ -29,7 +31,7 @@ function Login() {
 
     try {
       setloading(true);
-      const res = await axios.post("http://localhost:3000/login", {
+      const res = await axios.post(`${server}/login`, {
         email: email,
         password: password,
 

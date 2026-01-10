@@ -33,6 +33,8 @@ import { ThreeBarsIcon } from '@primer/octicons-react'
 import { useState, useEffect } from "react";
 import axios from 'axios'
 
+import server from "../environment"
+
 export default function Navbar() {
   const [open, setopen] = useState(false);
   const [searchQuery, setsearchQuery] = useState("");
@@ -44,7 +46,7 @@ export default function Navbar() {
   useEffect(() => {
     const fetchSuggestedRepositories = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/repo/all`);
+        const res = await axios.get(`${server}/repo/all`);
         setsuggestedRepositories(res.data);
 
 

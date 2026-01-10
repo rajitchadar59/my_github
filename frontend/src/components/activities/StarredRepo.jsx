@@ -8,6 +8,7 @@ import { StarIcon } from "@primer/octicons-react";
 import { useParams } from "react-router-dom";
 import { useAuth } from "../../AuthContext"
 import { useNavigate } from "react-router-dom";
+import server from "../../environment"
 
 function StarredRepo() {
     const [searchText, setSearchText] = useState("");
@@ -24,7 +25,7 @@ function StarredRepo() {
             const fetchProfile = async () => {
                 try {
                     const token = localStorage.getItem("token");
-                    const res = await axios.get(`http://localhost:3000/profile/${username}/repos`, {
+                    const res = await axios.get(`${server}/profile/${username}/repos`, {
                         headers: token ? { Authorization: `Bearer ${token}` } : {}
                     });
     
@@ -48,7 +49,7 @@ function StarredRepo() {
             try {
 
                  const token = localStorage.getItem("token");
-                 const res = await axios.get(`http://localhost:3000/profile/${username}/starred`,
+                 const res = await axios.get(`${server}/profile/${username}/starred`,
                     { headers: token ? { Authorization: `Bearer ${token}` } : {} }
                 );
 
@@ -91,7 +92,7 @@ function StarredRepo() {
         try {
             const currentStar = starredMap[repoId] || false;
 
-            await axios.post("http://localhost:3000/repo/star", {
+            await axios.post(`${server}/repo/star`, {
                 userId,
                 repoId,
                 star: !currentStar

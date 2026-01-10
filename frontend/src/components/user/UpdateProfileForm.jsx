@@ -8,6 +8,8 @@ import "./UpdateProfileForm.css"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
+import server from "../../environment"
+
 function UpdateProfileForm() {
   const navigate = useNavigate();
   const [form, setForm] = useState({
@@ -29,7 +31,7 @@ function UpdateProfileForm() {
       const username = localStorage.getItem("username");
 
       await axios.put(
-        "http://localhost:3000/profile/update",
+        `${server}/profile/update`,
         form,
         {
           headers: {

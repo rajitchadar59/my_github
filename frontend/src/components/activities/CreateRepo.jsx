@@ -5,7 +5,7 @@ import "./CreateRepo.css";
 import Navbar from '../Navbar'
 import { useNavigate } from "react-router-dom";
 import axios from 'axios'
-
+import server from "../../environment"
 
 const CreateRepo = () => {
   const [name, setname] = useState("");
@@ -21,7 +21,7 @@ const CreateRepo = () => {
 
       try{
 
-        const res = await axios.post("http://localhost:3000/repo/create",{
+        const res = await axios.post(`${server}/repo/create`,{
           name,
           description,
           visibility,

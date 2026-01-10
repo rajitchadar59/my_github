@@ -9,7 +9,7 @@ import "./CreateIssue.css";
 import axios from "axios";
 import Navbar from '../Navbar'
 import { useNavigate } from "react-router-dom";
-
+import server from "../../environment"
 
 export default function CreateIssue() {
     const [repos, setrepos] = useState([]);
@@ -26,7 +26,7 @@ export default function CreateIssue() {
     useEffect(() => {
         const fetchRepositories = async () => {
             try {
-                const res = await axios.get(`http://localhost:3000/repo/all`);
+                const res = await axios.get(`${server}/repo/all`);
                 setrepos(res.data);
             } catch (err) {
                 console.error("Error while featching repositories", err);
@@ -67,7 +67,7 @@ export default function CreateIssue() {
             return;
         }
         try {
-            const res = await axios.post(`http://localhost:3000/issue/create`, {
+            const res = await axios.post(`${server}/issue/create`, {
                 title,
                 description: desc,
                 repository: selectedRepo._id,

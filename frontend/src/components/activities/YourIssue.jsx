@@ -5,6 +5,8 @@ import axios from "axios";
 import "./YourIssue.css";
 import { useNavigate } from "react-router-dom";
 
+import server from "../../environment"
+
 function YourIssue() {
   const { CurrentUser } = useAuth();
   const [issues, setIssues] = useState([]);
@@ -12,12 +14,13 @@ function YourIssue() {
   const [loading, setLoading] = useState(true);
 
    const navigate = useNavigate();
+   
 
   useEffect(() => {
     const fetchIssues = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(`http://localhost:3000/issue/user/${CurrentUser}`, {
+        const res = await axios.get(`${server}/issue/user/${CurrentUser}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setIssues(res.data.issues || []);

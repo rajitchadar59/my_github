@@ -20,6 +20,8 @@ import {
 } from "@primer/octicons-react";
 import { useNavigate } from "react-router-dom";
 
+import server from "../../environment"
+
 function Following() {
 
     const [user, setUser] = useState({});
@@ -39,7 +41,7 @@ function Following() {
         const fetchProfile = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.get(`http://localhost:3000/profile/${username}/repos`, {
+                const res = await axios.get(`${server}/profile/${username}/repos`, {
                     headers: token ? { Authorization: `Bearer ${token}` } : {}
                 });
 
@@ -59,7 +61,7 @@ function Following() {
         const fetchFollowing = async () => {
             try {
                 const res = await axios.get(
-                    `http://localhost:3000/profile/${username}/following`
+                    `${server}/profile/${username}/following`
                 );
 
                 if (res.data.success) {

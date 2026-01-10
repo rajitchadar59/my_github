@@ -20,6 +20,8 @@ import {
 } from "@primer/octicons-react";
 import { useNavigate } from "react-router-dom";
 
+import server from "../../environment"
+
 function UserRepos() {
     const [searchQuery, setsearchQuery] = useState("");
     const [searchResult, setsearchResult] = useState([]);
@@ -39,7 +41,7 @@ function UserRepos() {
         const fetchProfile = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const res = await axios.get(`http://localhost:3000/profile/${username}/repos`, {
+                const res = await axios.get(`${server}/profile/${username}/repos`, {
                     headers: token ? { Authorization: `Bearer ${token}` } : {}
                 });
 
@@ -67,7 +69,7 @@ function UserRepos() {
         const fetchStarredRepos = async () => {
             try {
                 const res = await axios.get(
-                    `http://localhost:3000/profile/${username}/starred`,
+                    `${server}/profile/${username}/starred`,
                     {
                         headers: {
                             Authorization: `Bearer ${localStorage.getItem("token")}`
@@ -126,7 +128,7 @@ function UserRepos() {
             const userId = localStorage.getItem("userId");
             const currentStar = starredMap[repoId] || false;
 
-            const res = await axios.post("http://localhost:3000/repo/star", {
+            const res = await axios.post(`${server}/repo/star`, {
                 userId,
                 repoId,
                 star: !currentStar

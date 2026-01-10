@@ -4,6 +4,7 @@ import { useAuth } from "../../../AuthContext";
 import axios from "axios";
 import Navbar from "../../Navbar";
 import "./RepoDetails.css";
+import server from "../../../environment"
 
 export default function RepoDetailsPage() {
   const { username, reponame } = useParams();
@@ -28,7 +29,7 @@ export default function RepoDetailsPage() {
         const token = localStorage.getItem("token");
 
         const repoRes = await axios.get(
-          `http://localhost:3000/profile/${username}/repos`,
+          `${server}/profile/${username}/repos`,
           { headers: token ? { Authorization: `Bearer ${token}` } : {} }
         );
 
@@ -44,7 +45,7 @@ export default function RepoDetailsPage() {
         if (CurrentUser) {
           try {
             const res = await axios.get(
-              `http://localhost:3000/profile/${localStorage.getItem('username')}/starred`,
+              `${server}/profile/${localStorage.getItem('username')}/starred`,
               {
                 headers: {
                   Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -65,7 +66,7 @@ export default function RepoDetailsPage() {
 
 
         const issuesRes = await axios.get(
-          `http://localhost:3000/issue/all/${selectedRepo._id}`,
+          `${server}/issue/all/${selectedRepo._id}`,
           { headers: token ? { Authorization: `Bearer ${token}` } : {} }
         );
 
@@ -86,12 +87,12 @@ export default function RepoDetailsPage() {
     fetchRepoDetails();
   }, [username, reponame, navigate]);
 
-  // ⭐ Star repo
+
   const handleStar = async () => {
     try {
       const token = localStorage.getItem("token");
       await axios.post(
-        "http://localhost:3000/repo/star",
+        `${server}/repo/star`,
         { userId: CurrentUser, repoId: repo._id, star: !starred },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -101,12 +102,12 @@ export default function RepoDetailsPage() {
     }
   };
 
-  // 🗑 Delete repo
+  
   const handleDelete = async () => {
     if (!window.confirm("Are you sure?")) return;
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:3000/repo/delete/${repo._id}`, {
+      await axios.delete(`${server}/repo/delete/${repo._id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       navigate(`/profile/${username}`);
@@ -115,12 +116,12 @@ export default function RepoDetailsPage() {
     }
   };
 
-  // 🔒 Toggle repo visibility
+  
   const handleToggleVisibility = async () => {
     try {
       const token = localStorage.getItem("token");
       const res = await axios.patch(
-        `http://localhost:3000/repo/toggle/${repo._id}`,
+        `${server}/repo/toggle/${repo._id}`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -130,14 +131,14 @@ export default function RepoDetailsPage() {
     }
   };
 
-  // 🗑 Delete issue
+  
   const handleDeleteIssue = async (e, issueId) => {
     e.stopPropagation();
     if (!window.confirm("Delete this issue?")) return;
 
     try {
       const token = localStorage.getItem("token");
-      await axios.delete(`http://localhost:3000/issue/delete/${issueId}`, {
+      await axios.delete(`${server}/issue/delete/${issueId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setIssues(prev => prev.filter(i => i._id !== issueId));
@@ -146,7 +147,7 @@ export default function RepoDetailsPage() {
     }
   };
 
-  // ✏️ Edit issue
+  
   const handleEditClick = (e, issue) => {
     e.stopPropagation();
     setEditingIssueId(issue._id);
@@ -162,7 +163,7 @@ export default function RepoDetailsPage() {
       const token = localStorage.getItem("token");
 
       await axios.put(
-        `http://localhost:3000/issue/update/${issueId}`,
+        `${server}/issue/update/${issueId}`,
         editForm,
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -192,7 +193,7 @@ export default function RepoDetailsPage() {
 
     try {
       const res = await axios.put(
-        `http://localhost:3000/issue/toggle/${issue._id}`,
+        `${server}/issue/toggle/${issue._id}`,
         { userId: CurrentUser },
         { headers: { Authorization: `Bearer ${token}` } }
       );
