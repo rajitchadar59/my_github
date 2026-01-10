@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* allow wrapping on small screens */
+  flex-wrap: wrap; 
   padding: 1rem 2rem;
   background-color: #0d1117;
   color: #7d8590;
   font-size: 11px;
 }
 
-/* LEFT SECTION */
+
 .userfooter-left {
   display: flex;
   align-items: center;
@@ -18,7 +18,7 @@
   background-color: #0d1117;
 }
 
-/* RIGHT SECTION */
+
 .userfooter-right {
   display: flex;
   justify-content: flex-end;
