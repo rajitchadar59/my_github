@@ -17,7 +17,10 @@ async function commitRepo(message){
 
       for(const file of files){
 
+       const stagedFile = path.join(stagedPath, file);
         await fs.copyFile(path.join(stagedPath,file) ,path.join(commitDir , file));
+
+        await fs.unlink(stagedFile);
 
       }
 
