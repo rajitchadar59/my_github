@@ -211,13 +211,13 @@ export default function Navbar() {
 
           <ul className="dropdown-menu dark-dropdown">
             <li>
-              <a className="dropdown-item" href="/createissue">
+              <a className="dropdown-item" onClick={() => navigate("/createissue")}>
                 <PlusCircleIcon size={20} />
                 <span>New issue</span>
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="/createrepo">
+              <a className="dropdown-item" onClick={() => navigate("/createrepo")}>
                 <RepoIcon size={20} />
                 <span>New repository</span>
               </a>
