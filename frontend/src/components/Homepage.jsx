@@ -6,7 +6,7 @@ import {
   PeopleIcon,
   ZapIcon,
 } from "@primer/octicons-react";
-import "./HomePage.css";
+import "./Homepage.css";
 import { useNavigate } from "react-router-dom";
 
 export default function HomePage() {
