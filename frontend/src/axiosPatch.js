@@ -1,6 +1,6 @@
 import axios from "axios";
-
-axios.defaults.baseURL = "http://localhost:3000/";
+import server from "./environment"
+axios.defaults.baseURL = `${server}`;
 
 axios.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
