@@ -259,7 +259,7 @@ export default function RepoDetailsPage() {
         </div>
 
         <div className="repo-grid">
-          {/* LEFT */}
+         
           <div className="repo-main-deatail fade-in-up">
             <div className="section-header">
               <h3>Issues</h3>

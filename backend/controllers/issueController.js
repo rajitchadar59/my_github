@@ -38,7 +38,7 @@ const updateIssueByID = async (req, res) => {
   const { id } = req.params;
   const { title, description, status } = req.body;
 
-  if (!title || !description || !status) {
+  if (!title || !description) {
     return res.status(400).json({ message: "All fields are required!" });
   }
 
