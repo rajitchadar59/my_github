@@ -31,7 +31,7 @@ function Login() {
 
     try {
       setloading(true);
-      const res = await axios.post(`${server}/login`, {
+      const res = await axios.post(`https://my-github-cd3v.onrender.com/login`, {
         email: email,
         password: password,
 
