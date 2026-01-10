@@ -41,7 +41,8 @@ function Signup() {
       const userId = res.data.userId;
       localStorage.setItem("token", token);
       localStorage.setItem("userId", userId);
-
+      localStorage.setItem("username", res.data.username);
+      
       setCurrentUser(userId);
       setloading(false);
 
