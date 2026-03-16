@@ -40,132 +40,71 @@ Real version control that actually works under the hood:
 
 ## 📸 Complete Visual Walkthrough
 
-*(Click on the sections below to expand and view the detailed screenshots of the project)*
+### 1. Authentication & Main Dashboard 🌐
+Users can securely sign up, log in, and navigate through the platform using the intuitive dashboard.
 
-<details>
-<summary><b>1. Authentication & Main Dashboard 🌐</b></summary>
+| Landing Page | Sign In | Sign Up |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/371a69e0-5798-434c-87c3-6b58474b5681" width="300" /> | <img src="https://github.com/user-attachments/assets/48638099-eb2b-4fea-bc6a-3d734532380f" width="300" /> | <img src="https://github.com/user-attachments/assets/9a549ea9-18e8-4dd8-b1c4-e25bdbd9ed99" width="300" /> |
+
 <br>
-<p>Landing Page Without Login</p>
-<img src="https://github.com/user-attachments/assets/371a69e0-5798-434c-87c3-6b58474b5681" width="80%">
 
-<p>Sign In Page</p>
-<img src="https://github.com/user-attachments/assets/48638099-eb2b-4fea-bc6a-3d734532380f" width="80%">
+| Sidebar Navigation | Dashboard Layout |
+| :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/151f2d1f-bfb7-461c-85eb-da59e24e909f" width="300" /> | <img src="https://github.com/user-attachments/assets/94639569-be30-4cb7-beaf-508e49c5a9d6" width="300" /> |
 
-<p>Sign Up Page</p>
-<img src="https://github.com/user-attachments/assets/9a549ea9-18e8-4dd8-b1c4-e25bdbd9ed99" width="80%">
+### 2. Repository & Issue Tracking System 🛠️
+Manage your code repositories and track project-related issues with ease.
 
-<p>Sidebar & Navigation Layout</p>
-<img src="https://github.com/user-attachments/assets/151f2d1f-bfb7-461c-85eb-da59e24e909f" width="80%">
-</details>
+| Repo Info | Create Repo | Issue Detail |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/1425e3b0-04ff-48f3-be31-b7333a590f7b" width="300" /> | <img src="https://github.com/user-attachments/assets/9ef29f55-4438-4f8b-b853-a414aeea0478" width="300" /> | <img src="https://github.com/user-attachments/assets/3ecec8f9-d924-40bc-9ac7-c4e57dd3639c" width="300" /> |
 
-<details>
-<summary><b>2. Repository & Issue Tracking System 🛠️</b></summary>
 <br>
-<p>Repository Info Page</p>
-<img src="https://github.com/user-attachments/assets/1425e3b0-04ff-48f3-be31-b7333a590f7b" width="80%">
 
-<p>Create New Repository</p>
-<img src="https://github.com/user-attachments/assets/9ef29f55-4438-4f8b-b853-a414aeea0478" width="80%">
+| Create Issue (Page 1) | Create Issue (Page 2) | Issue Form | My Issues |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/0178a578-655c-467d-af24-e4462017cc5c" width="220" /> | <img src="https://github.com/user-attachments/assets/bdc7afc9-ae09-44aa-9802-7c4d7cd49664" width="220" /> | <img src="https://github.com/user-attachments/assets/8abc56c6-7fa3-4498-bc4e-175df973dfba" width="220" /> | <img src="https://github.com/user-attachments/assets/c7f6d94e-86ac-41c9-8d85-1ee24a4c26a2" width="220" /> |
 
-<p>Issue Tracker (Edit, Delete, Reopen Permissions)</p>
-<img src="https://github.com/user-attachments/assets/b811ef42-090f-4490-b60e-666125588ee6" width="80%">
+### 3. User Profiles & Social Features 👤
+Explore user profiles, follow other developers, and view their contributions.
 
-<p>Issue Detail View</p>
-<img src="https://github.com/user-attachments/assets/3ecec8f9-d924-40bc-9ac7-c4e57dd3639c" width="80%">
+| Profile Overview | Owned Repos | Starred Repos |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/51747d18-30db-4081-9268-72afa6623d2d" width="300" /> | <img src="https://github.com/user-attachments/assets/79a7896d-34cb-4bc5-98f0-a00424c5d415" width="300" /> | <img src="https://github.com/user-attachments/assets/d9387bce-8901-415f-a08d-7ca805ee7342" width="300" /> |
 
-<p>Create Issue Layout</p>
-<img src="https://github.com/user-attachments/assets/0178a578-655c-467d-af24-e4462017cc5c" width="80%">
-
-<p>Search Repos to Create Issue</p>
-<img src="https://github.com/user-attachments/assets/bdc7afc9-ae09-44aa-9802-7c4d7cd49664" width="80%">
-
-<p>Create Issue Form Details</p>
-<img src="https://github.com/user-attachments/assets/8abc56c6-7fa3-4498-bc4e-175df973dfba" width="80%">
-
-<p>My Issues Dashboard</p>
-<img src="https://github.com/user-attachments/assets/c7f6d94e-86ac-41c9-8d85-1ee24a4c26a2" width="80%">
-</details>
-
-<details>
-<summary><b>3. User Profiles & Social Features 👤</b></summary>
 <br>
-<p>My Profile - Overview</p>
-<img src="https://github.com/user-attachments/assets/51747d18-30db-4081-9268-72afa6623d2d" width="80%">
 
-<p>My Profile - Owned Repositories</p>
-<img src="https://github.com/user-attachments/assets/79a7896d-34cb-4bc5-98f0-a00424c5d415" width="80%">
+| Other Profile (Page 1) | Other Profile (Page 2) | Update Profile | Following List |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/51e6288e-f736-41b8-8540-e85d6ee10d33" width="220" /> | <img src="https://github.com/user-attachments/assets/1fdaabdb-bd1a-4b31-93e4-a826b4c3a257" width="220" /> | <img src="https://github.com/user-attachments/assets/1b4c2b99-00c4-4a0e-a738-efd7a91660b5" width="220" /> | <img src="https://github.com/user-attachments/assets/969375c1-b653-420e-bf9b-66a51b74ccd1" width="220" /> |
 
-<p>My Profile - Starred Repositories</p>
-<img src="https://github.com/user-attachments/assets/d9387bce-8901-415f-a08d-7ca805ee7342" width="80%">
+### 4. Custom Git Architecture & AWS Sync ⚙️
+This project deeply understands the internals of Git, from local staging to cloud-based storage on AWS S3.
 
-<p>Other User Profile - Overview</p>
-<img src="https://github.com/user-attachments/assets/51e6288e-f736-41b8-8540-e85d6ee10d33" width="80%">
+**Internal Custom Git (CLI Process)**
 
-<p>Other User Profile - Repositories</p>
-<img src="https://github.com/user-attachments/assets/1fdaabdb-bd1a-4b31-93e4-a826b4c3a257" width="80%">
+| Workspace (Initial) | `node index.js init` | New File Tracked | `node index.js add` |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/65089546-96da-401a-adbc-3d3adf64c3e4" width="220" /> | <img src="https://github.com/user-attachments/assets/020d2974-974b-407d-9c86-07c2bc0c8f3e" width="220" /> | <img src="https://github.com/user-attachments/assets/43e4c752-f436-400d-81f5-e646b42d2cc2" width="220" /> | <img src="https://github.com/user-attachments/assets/752b39e8-fc2c-4673-bc2e-8cbf6c3ec626" width="220" /> |
 
-<p>Following / Followers List</p>
-<img src="https://github.com/user-attachments/assets/969375c1-b653-420e-bf9b-66a51b74ccd1" width="80%">
-
-<p>Update Profile Details</p>
-<img src="https://github.com/user-attachments/assets/1b4c2b99-00c4-4a0e-a738-efd7a91660b5" width="80%">
-</details>
-
-<details>
-<summary><b>4. Internal Custom Git Architecture (CLI Process) ⚙️</b></summary>
 <br>
-<p>VS Code Workspace (Before CLI Execution)</p>
-<img src="https://github.com/user-attachments/assets/65089546-96da-401a-adbc-3d3adf64c3e4" width="80%">
 
-<p>Executing <code>node index.js init</code> (Creates hidden .mygit folder)</p>
-<img src="https://github.com/user-attachments/assets/020d2974-974b-407d-9c86-07c2bc0c8f3e" width="80%">
+| `node index.js commit` | Staging to Commits | Web UI Sync |
+| :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/15c9b594-fdb5-4f1c-8f7e-8e9cd95f9995" width="300" /> | <img src="https://github.com/user-attachments/assets/b600b547-f945-4739-93c2-c267f0616ac3" width="300" /> | <img src="https://github.com/user-attachments/assets/1e13d44f-dd58-40f1-aa66-253d4dbe4415" width="300" /> |
 
-<p>Creating a new file to track</p>
-<img src="https://github.com/user-attachments/assets/43e4c752-f436-400d-81f5-e646b42d2cc2" width="80%">
+**AWS S3 Push & Cloud Sync Integration**
 
-<p>Executing <code>node index.js add hello.txt</code> (Moves file to staging area)</p>
-<img src="https://github.com/user-attachments/assets/752b39e8-fc2c-4673-bc2e-8cbf6c3ec626" width="80%">
+| AWS S3 Initialize | `node index.js push` | Pushed to S3 | S3 Commits Folder |
+| :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/fd7f393e-8444-428a-8def-23564d89798b" width="220" /> | <img src="https://github.com/user-attachments/assets/c2273226-83e7-4b56-a488-88de7a2cbfe3" width="220" /> | <img src="https://github.com/user-attachments/assets/1e4d164e-3187-498d-9c5e-9260258d6a09" width="220" /> | <img src="https://github.com/user-attachments/assets/473cb9fd-3c28-4cfb-80c9-f3255aa2c4e5" width="220" /> |
 
-<p>Executing <code>node index.js commit "add new file"</code></p>
-<img src="https://github.com/user-attachments/assets/15c9b594-fdb5-4f1c-8f7e-8e9cd95f9995" width="80%">
-
-<p>File moves from Staging to Commits folder dynamically</p>
-<img src="https://github.com/user-attachments/assets/b600b547-f945-4739-93c2-c267f0616ac3" width="80%">
-
-<p>Web UI Reflecting the New Commit</p>
-<img src="https://github.com/user-attachments/assets/1e13d44f-dd58-40f1-aa66-253d4dbe4415" width="80%">
-</details>
-
-<details>
-<summary><b>5. AWS S3 Push & Cloud Sync Integration ☁️</b></summary>
 <br>
-<p>AWS S3 Bucket Initialized for Project</p>
-<img src="https://github.com/user-attachments/assets/fd7f393e-8444-428a-8def-23564d89798b" width="80%">
 
-<p>Executing <code>node index.js push</code></p>
-<img src="https://github.com/user-attachments/assets/c2273226-83e7-4b56-a488-88de7a2cbfe3" width="80%">
-
-<p>Data Pushed to S3 Bucket Successfully</p>
-<img src="https://github.com/user-attachments/assets/1e4d164e-3187-498d-9c5e-9260258d6a09" width="80%">
-
-<p>Commits Folder synchronized inside S3</p>
-<img src="https://github.com/user-attachments/assets/473cb9fd-3c28-4cfb-80c9-f3255aa2c4e5" width="80%">
-
-<p>Unique Commit ID Folder Generated in Cloud</p>
-<img src="https://github.com/user-attachments/assets/4a97a521-4a73-452f-9f2e-95fd3d9e382c" width="80%">
-
-<p>Commit objects (hello.txt & commit.json) stored in S3</p>
-<img src="https://github.com/user-attachments/assets/288215fc-7aea-451a-b0c4-8f429ad62a67" width="80%">
-
-<p>AWS File Object URL Page for Download</p>
-<img src="https://github.com/user-attachments/assets/e0e38c48-653d-41b4-844c-cadc1063c60d" width="80%">
-
-<p>File Verified in Download History</p>
-<img src="https://github.com/user-attachments/assets/789d5876-bbe6-40a2-8ae1-e9feb935e743" width="80%">
-
-<p>Successfully Opened Downloaded File From S3</p>
-<img src="https://github.com/user-attachments/assets/7acf3b6e-47bd-4380-92cb-9914eec61691" width="80%">
-</details>
+| AWS Commit Folder | S3 Objects Stored | AWS Object URL | Download History | Downloaded File |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="https://github.com/user-attachments/assets/4a97a521-4a73-452f-9f2e-95fd3d9e382c" width="180" /> | <img src="https://github.com/user-attachments/assets/288215fc-7aea-451a-b0c4-8f429ad62a67" width="180" /> | <img src="https://github.com/user-attachments/assets/e0e38c48-653d-41b4-844c-cadc1063c60d" width="180" /> | <img src="https://github.com/user-attachments/assets/789d5876-bbe6-40a2-8ae1-e9feb935e743" width="180" /> | <img src="https://github.com/user-attachments/assets/7acf3b6e-47bd-4380-92cb-9914eec61691" width="180" /> |
 
 ---
 
