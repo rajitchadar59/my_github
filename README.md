@@ -1,84 +1,36 @@
-# 🐙 Custom Git CLI & GitHub Clone
-
-> A fully functional, custom-built Version Control System (CLI) and a GitHub-like web platform built from scratch to understand the deep internals of Git and Cloud-based code storage.
-
-![GitHub Clone Preview](./path-to-your-main-ui-image.png) 
-*(Replace the above link with your main project screenshot)*
-
-[![Tech Stack](https://img.shields.io/badge/Tech-MERN_Stack-blue)](#)
-[![Cloud Storage](https://img.shields.io/badge/Storage-AWS_S3-orange)](#)
-[![Version Control](https://img.shields.io/badge/CLI-Node.js-green)](#)
-
-## 📖 About The Project
-
-This project is divided into two major components:
-1. **Custom Git (CLI):** A command-line tool built with Node.js that mimics core Git functionalities. It handles file staging, creates unique commit IDs, maintains version history locally, and pushes code securely to an AWS S3 Bucket.
-2. **GitHub Clone (Web App):** A full-stack MERN application that serves as the visual interface for the repositories, allowing users to manage code, track issues, and interact socially (follow/unfollow) just like the real GitHub.
-
----
-
-## ✨ Key Features
-
-### 💻 1. The Custom Git System (CLI)
-Real version control that actually works under the hood:
-- **`init`**: Initializes a new local repository.
-- **`add`**: Stages files for commit.
-- **`commit`**: Generates unique cryptographic commit IDs and saves the version history.
-- **`push`**: Securely uploads the committed files and version history to **AWS S3 Cloud Storage**.
-
-### 🌐 2. The GitHub Web App (MERN)
-- **Authentication:** Secure Signup/Login using JWT Tokens.
-- **Repository Management:** Create, view, and manage remote repositories.
-- **Social Features:** User profiles and the ability to Follow/Unfollow other developers.
-- **Issue Tracking:** Create and manage issues for specific repositories.
-- **Responsive UI:** A clean, GitHub-style user interface built with React.
-
----
-
-## 🛠️ Tech Stack
-
-- **Frontend:** React.js, Tailwind CSS / Vanilla CSS
-- **Backend:** Node.js, Express.js
-- **Database:** MongoDB
-- **Cloud Storage:** AWS S3 (Simple Storage Service)
-- **Authentication:** JSON Web Tokens (JWT) & Bcrypt
-- **CLI Tooling:** Node.js file system (`fs`) and environment variables.
-
----
-
-## 🧠 How It Works (Architecture & Process)
-
-### Building `mygit` (The CLI Process)
-*Here is a visual breakdown of how the internal staging, committing, and pushing to S3 works:*
-
-![MyGit Architecture](./path-to-your-mygit-process-image.png)
-*(Upload an image/diagram explaining your CLI process here)*
-
-1. When a user runs `node index.js add`, the system reads the file content and stages it in a hidden `.mygit` directory.
-2. `node index.js commit` hashes the content, creates a unique snapshot of the current state, and logs the message.
-3. `node index.js push` connects to the AWS S3 bucket and uploads the committed snapshots, acting as our remote origin.
-
-### The Web Interface
-*A look at the user dashboard and repository views:*
-
-![Dashboard View](./path-to-your-dashboard-image.png)
-*(Upload an image of your User Dashboard here)*
-
-![Repository View](./path-to-your-repo-view-image.png)
-*(Upload an image of your Repository Details/Issues page here)*
-
----
-
-## 🚀 Getting Started
-
-To run this project locally, follow these steps:
-
-### Prerequisites
-- Node.js installed on your machine.
-- MongoDB running locally or a MongoDB Atlas URI.
-- An AWS Account with an active S3 Bucket and IAM access keys.
-
-### 1. Clone the repository
-```bash
-git clone [https://github.com/rajitchadar59/my_github.git](https://github.com/rajitchadar59/my_github.git)
-cd my_github
+<img width="1899" height="905" alt="Image" src="https://github.com/user-attachments/assets/371a69e0-5798-434c-87c3-6b58474b5681" />
+<img width="1900" height="913" alt="Image" src="https://github.com/user-attachments/assets/48638099-eb2b-4fea-bc6a-3d734532380f" />
+<img width="1900" height="909" alt="Image" src="https://github.com/user-attachments/assets/9a549ea9-18e8-4dd8-b1c4-e25bdbd9ed99" />
+<img width="1901" height="913" alt="Image" src="https://github.com/user-attachments/assets/94639569-be30-4cb7-beaf-508e49c5a9d6" />
+<img width="1900" height="906" alt="Image" src="https://github.com/user-attachments/assets/151f2d1f-bfb7-461c-85eb-da59e24e909f" />
+<img width="1919" height="911" alt="Image" src="https://github.com/user-attachments/assets/1425e3b0-04ff-48f3-be31-b7333a590f7b" />
+<img width="1900" height="911" alt="Image" src="https://github.com/user-attachments/assets/9ef29f55-4438-4f8b-b853-a414aeea0478" />
+<img width="1903" height="908" alt="Image" src="https://github.com/user-attachments/assets/0178a578-655c-467d-af24-e4462017cc5c" />
+<img width="1899" height="905" alt="Image" src="https://github.com/user-attachments/assets/bdc7afc9-ae09-44aa-9802-7c4d7cd49664" />
+<img width="1901" height="904" alt="Image" src="https://github.com/user-attachments/assets/8abc56c6-7fa3-4498-bc4e-175df973dfba" />
+<img width="1919" height="909" alt="Image" src="https://github.com/user-attachments/assets/c7f6d94e-86ac-41c9-8d85-1ee24a4c26a2" />
+<img width="1916" height="891" alt="Image" src="https://github.com/user-attachments/assets/51747d18-30db-4081-9268-72afa6623d2d" />
+<img width="1911" height="891" alt="Image" src="https://github.com/user-attachments/assets/79a7896d-34cb-4bc5-98f0-a00424c5d415" />
+<img width="1899" height="884" alt="Image" src="https://github.com/user-attachments/assets/d9387bce-8901-415f-a08d-7ca805ee7342" />
+<img width="1897" height="881" alt="Image" src="https://github.com/user-attachments/assets/51e6288e-f736-41b8-8540-e85d6ee10d33" />
+<img width="1899" height="878" alt="Image" src="https://github.com/user-attachments/assets/1fdaabdb-bd1a-4b31-93e4-a826b4c3a257" />
+<img width="1898" height="886" alt="Image" src="https://github.com/user-attachments/assets/969375c1-b653-420e-bf9b-66a51b74ccd1" />
+<img width="1898" height="885" alt="Image" src="https://github.com/user-attachments/assets/1b4c2b99-00c4-4a0e-a738-efd7a91660b5" />
+<img width="1919" height="907" alt="Image" src="https://github.com/user-attachments/assets/b811ef42-090f-4490-b60e-666125588ee6" />
+<img width="1919" height="914" alt="Image" src="https://github.com/user-attachments/assets/3ecec8f9-d924-40bc-9ac7-c4e57dd3639c" />
+<img width="1918" height="863" alt="Image" src="https://github.com/user-attachments/assets/fd7f393e-8444-428a-8def-23564d89798b" />
+<img width="1919" height="975" alt="Image" src="https://github.com/user-attachments/assets/65089546-96da-401a-adbc-3d3adf64c3e4" />
+<img width="1919" height="979" alt="Image" src="https://github.com/user-attachments/assets/020d2974-974b-407d-9c86-07c2bc0c8f3e" />
+<img width="1919" height="978" alt="Image" src="https://github.com/user-attachments/assets/43e4c752-f436-400d-81f5-e646b42d2cc2" />
+<img width="1919" height="979" alt="Image" src="https://github.com/user-attachments/assets/752b39e8-fc2c-4673-bc2e-8cbf6c3ec626" />
+<img width="1919" height="972" alt="Image" src="https://github.com/user-attachments/assets/15c9b594-fdb5-4f1c-8f7e-8e9cd95f9995" />
+<img width="1919" height="976" alt="Image" src="https://github.com/user-attachments/assets/b600b547-f945-4739-93c2-c267f0616ac3" />
+<img width="1914" height="971" alt="Image" src="https://github.com/user-attachments/assets/1e13d44f-dd58-40f1-aa66-253d4dbe4415" />
+<img width="1919" height="980" alt="Image" src="https://github.com/user-attachments/assets/c2273226-83e7-4b56-a488-88de7a2cbfe3" />
+<img width="1919" height="855" alt="Image" src="https://github.com/user-attachments/assets/1e4d164e-3187-498d-9c5e-9260258d6a09" />
+<img width="1919" height="866" alt="Image" src="https://github.com/user-attachments/assets/473cb9fd-3c28-4cfb-80c9-f3255aa2c4e5" />
+<img width="1917" height="865" alt="Image" src="https://github.com/user-attachments/assets/4a97a521-4a73-452f-9f2e-95fd3d9e382c" />
+<img width="1919" height="867" alt="Image" src="https://github.com/user-attachments/assets/288215fc-7aea-451a-b0c4-8f429ad62a67" />
+<img width="1907" height="867" alt="Image" src="https://github.com/user-attachments/assets/e0e38c48-653d-41b4-844c-cadc1063c60d" />
+<img width="1919" height="311" alt="Image" src="https://github.com/user-attachments/assets/789d5876-bbe6-40a2-8ae1-e9feb935e743" />
+<img width="1420" height="736" alt="Image" src="https://github.com/user-attachments/assets/7acf3b6e-47bd-4380-92cb-9914eec61691" />
