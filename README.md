@@ -101,7 +101,7 @@ Explore user profiles, follow other developers, and view their contributions.
 
 <br>
 
-| Other User Profile (Page 1) | Other User Profile (Page 2) | Update Your Profile | Your Following List |
+| Other User Profile (P1) | Other User Profile (P2) | Update Your Profile | Your Following List |
 | :---: | :---: | :---: | :---: |
 | <img src="https://github.com/user-attachments/assets/51e6288e-f736-41b8-8540-e85d6ee10d33" width="220" /> | <img src="https://github.com/user-attachments/assets/1fdaabdb-bd1a-4b31-93e4-a826b4c3a257" width="220" /> | <img src="https://github.com/user-attachments/assets/1b4c2b99-00c4-4a0e-a738-efd7a91660b5" width="220" /> | <img src="https://github.com/user-attachments/assets/969375c1-b653-420e-bf9b-66a51b74ccd1" width="220" /> |
 
