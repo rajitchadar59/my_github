@@ -1,5 +1,4 @@
 const express = require('express');
-const path = require('path'); 
 const dotenv = require('dotenv');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -84,9 +83,7 @@ function startServer() {
 
     app.use("/", mainRouter);
 
-    app.use((req, res) => {
-    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
-    });
+    
 
     app.listen(port, () => {
         console.log(`server is running on port ${port}`);
