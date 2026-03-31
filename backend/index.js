@@ -84,7 +84,7 @@ function startServer() {
 
     app.use("/", mainRouter);
 
-    app.get(/(.*)/, (req, res) => {
+    app.use((req, res) => {
     res.sendFile(path.join(__dirname, 'dist', 'index.html'));
     });
 
