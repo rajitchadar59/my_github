@@ -71,7 +71,6 @@ function startServer() {
     app.use(bodyParser.json());
     app.use(express.json());
 
-    app.use(express.static(path.join(__dirname, 'dist')));
 
     const mongoURI = process.env.MONGO_URI;
 
