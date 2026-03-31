@@ -77,7 +77,7 @@ function startServer() {
 
     mongoose.connect(mongoURI).then(() => {
         console.log('MongoDB connected !');
-    }).catch((err) => console.error("Unable to connect : ", err));
+    }).catch((err) => console.error("Unable to connect  : ", err));
 
     app.use(cors({ origin: "*" }));
 
