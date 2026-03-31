@@ -1,4 +1,5 @@
-const express = require('express'); 
+const express = require('express');
+const path = require('path'); 
 const dotenv = require('dotenv');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -13,6 +14,9 @@ const { pushRepo } = require("./controllers/push");
 const { pullRepo } = require("./controllers/pull");
 const { revertRepo } = require("./controllers/revert");
 const mainRouter = require('./routes/main.router');
+
+
+
 
 
 const { Server } = require('socket.io');
@@ -68,6 +72,8 @@ function startServer() {
     app.use(bodyParser.json());
     app.use(express.json());
 
+    app.use(express.static(path.join(__dirname, 'dist')));
+
     const mongoURI = process.env.MONGO_URI;
 
     mongoose.connect(mongoURI).then(() => {
@@ -77,6 +83,10 @@ function startServer() {
     app.use(cors({ origin: "*" }));
 
     app.use("/", mainRouter);
+
+    app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'dist', 'index.html'));
+    });
 
     app.listen(port, () => {
         console.log(`server is running on port ${port}`);
